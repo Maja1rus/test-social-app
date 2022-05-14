@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family: var(--font-gothampro);
+    font-size: var(--size-normal);
+    line-height: 1.2;
+    color: var(--color-black);
+    font-weight: var(--font-regular);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

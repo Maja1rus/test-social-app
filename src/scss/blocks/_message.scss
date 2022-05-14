@@ -1,0 +1,42 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+
+    gap: 10px;
+}
+
+.message__to {
+    display: flex;
+    justify-content: flex-end;
+
+    .message__text {
+        order: -1;
+        background-color: #92AAFF;
+    }
+}
+
+.message__from {
+    display: grid;
+    justify-content: flex-start;
+        .message__text {
+        background-color: #FFCFCF;
+    }
+}
+
+.message__text {
+    text-align: justify;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width:1025px) {
+    .message {
+        width: 65%;
+    }
+}
+@media screen and (min-width:1440px) {
+    .message {
+        width: 40%;
+    }
+}

@@ -1,0 +1,46 @@
+.dialog {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    padding-left: 5px;
+
+    transition: background-color 0.1s ease-in-out;
+
+    &:hover {
+        background-color: antiquewhite;
+    }
+}
+
+.dialog__img {
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.dialog__title {
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: var(--font-bold);
+    line-height: 1;
+}
+
+.dialog__message {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1;
+}

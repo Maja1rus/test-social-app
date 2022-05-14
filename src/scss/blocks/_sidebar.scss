@@ -1,0 +1,24 @@
+.chat__sidebar {
+    display: grid;
+    gap: 10px;
+    height: calc(100% - 160px);
+    width: 190px;
+    background-color: #C4E3CB;
+    position: fixed;
+    overflow-y: auto;
+    top: 50px;
+    bottom: 0;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and(max-width:530px) {
+    .chat__sidebar { 
+        transform: translate(-150%);
+        &.active {
+            transform: translate(0%);
+            z-index: 1;
+            width: calc(100% - 10px);
+        }
+    }
+}
