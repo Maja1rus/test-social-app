@@ -16,7 +16,7 @@ export const svgSpriteTask = () => {
                     stack: {
                         sprite: `../icons/sprites.svg`,
                         // Создавать страницу с перечнем иконок
-                        example: true
+                        // example: true
                     }
                 }
             })
